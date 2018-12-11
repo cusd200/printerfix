@@ -1,0 +1,28 @@
+# Exclude the output directories
+[Dd]ebug/
+[Rr]elease/
+
+# Excluse user-specific files
+.vs/
+*.user
+*.suo
+
+# Exclude executable binary files
+*.dll
+*.exe
+*.lib
+
+# Exclude binary files
+*.aps
+*.db
+*.ilk
+*.opendb
+*.pdb
+
+# Exclude the project databases
+*.opensdf
+*.sdf
+
+# Exclude log files and the VLD report
+*.log
+memory_leak_report.txt

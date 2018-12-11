@@ -1,0 +1,12 @@
+# Assume all files have Windows-style line endings
+* text eol=crlf
+
+# Don't treat Windows icon files as text
+*.ico -text
+
+# Don't treat resource files as text (to preserve the copyright symbol)
+*.rc -text
+
+# Assume all code files have Windows-style line endings and highlight properly
+*.cpp text eol=crlf diff=cpp
+*.hpp text eol=crlf diff=cpp
