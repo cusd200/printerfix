@@ -1,7 +1,7 @@
 /*
  *
  * Printer Fix for CUSD 200
- * Copyright 2018 Daniel Sage
+ * Copyright 2019 Daniel Sage
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@
 IDI_MAIN ICON "PrinterFix.ico"
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1, 0, 0, 0
- PRODUCTVERSION 1, 0, 0, 0
+ FILEVERSION 1, 1, 0, 0
+ PRODUCTVERSION 1, 1, 0, 0
  FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
 #ifdef _DEBUG
  FILEFLAGS VS_FF_DEBUG
@@ -40,12 +40,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Daniel Sage"
             VALUE "FileDescription", "Printer Fix for CUSD 200"
-            VALUE "FileVersion", "1.0.0"
+            VALUE "FileVersion", "1.1.0"
             VALUE "InternalName", "PrinterFix"
-            VALUE "LegalCopyright", "Copyright © 2018 Daniel Sage"
+            VALUE "LegalCopyright", "Copyright © 2019 Daniel Sage"
             VALUE "OriginalFilename", "PrinterFix.exe"
             VALUE "ProductName", "Printer Fix for CUSD 200"
-            VALUE "ProductVersion", "1.0.0"
+            VALUE "ProductVersion", "1.1.0"
         END
     END
     BLOCK "VarFileInfo"

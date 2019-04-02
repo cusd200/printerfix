@@ -1,7 +1,7 @@
 /*
  *
  * Printer Fix for CUSD 200
- * Copyright 2018 Daniel Sage
+ * Copyright 2019 Daniel Sage
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,14 +38,14 @@ DWORD EnableShutdownPrivileges();
 
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-	// Question: Are you signed in as the staff member experiencing the issue?
-	auto response = ::MessageBox(HWND_DESKTOP, "Are you signed in as the staff member experiencing the issue?", PF_TITLE, MB_ICONQUESTION | MB_YESNO);
+	// Question: Are you ready to restart your computer?
+	auto response = ::MessageBox(HWND_DESKTOP, "Are you ready to restart your computer? This program will force your computer to restart immediately after changing a few settings.", PF_TITLE, MB_ICONQUESTION | MB_YESNO);
 
 	// Check if the user chose _No_
 	if (response == IDNO)
 	{
-		// Error: You must be signed in as the staff member!
-		::MessageBox(HWND_DESKTOP, "You must be signed in as the staff member!", PF_TITLE, MB_ICONERROR);
+		// Error: This program must restart your computer to work correctly. Please run the program when you are ready to restart!
+		::MessageBox(HWND_DESKTOP, "This program must restart your computer to work correctly. Please run the program when you are ready to restart!", PF_TITLE, MB_ICONERROR);
 		return -1;
 	}
 
